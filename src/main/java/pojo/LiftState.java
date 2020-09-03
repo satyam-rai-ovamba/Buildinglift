@@ -4,7 +4,7 @@ import java.util.SortedSet;
 
 public class LiftState {
 	private int floor;
-	private String direction; // change 
+	private boolean direction; // change 
 	private SortedSet<Integer> destinationList;
 	
 	public int getFloor() {
@@ -13,10 +13,10 @@ public class LiftState {
 	public void setFloor(int floor) {
 		this.floor = floor;
 	}
-	public String getDirection() {
+	public boolean getDirection() {
 		return direction;
 	}
-	public void setDirection(String direction) {
+	public void setDirection(boolean direction) {
 		this.direction = direction;
 	}
 	public SortedSet<Integer> getDestinationList() {
