@@ -1,0 +1,65 @@
+
+
+   <%- contentFor('HeaderCss') %>
+   <!-- perticular page css -->
+    <!-- X-editable css -->
+    <link type="text/css" href="public/plugins/x-editable/css/bootstrap-editable.css" rel="stylesheet">
+
+     
+   
+   <%- contentFor('body') %>
+                <div class="content">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="page-title-box">
+                                    <h4 class="page-title">Config Settings</h4>
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
+                                        <li class="breadcrumb-item active">Config Settings</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card m-b-20">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title">Config Variables</h4>
+        
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th style="width: 50%;">Variables</th>
+                                                <th>Value</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>NFT_PER_HOUR</td>
+                                                <td>
+                                                    <a href="#" id="inline-NFT_PER_HOUR" data-type="number" data-title="NFT_PER_HOUR" data-placeholder="Required" data-name="NFT_PER_HOUR" data-pk="NFT_PER_HOUR">0</a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+        
+                                    </div>
+                                </div>
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->        
+
+                    </div> <!-- container-fluid -->
+
+                </div> <!-- content -->
+                
+<%- contentFor('FooterJs') %>
+ <!-- XEditable Plugin -->
+ <script src="public/plugins/moment/moment.js"></script>
+ <script src="public/plugins/x-editable/js/bootstrap-editable.min.js"></script>
+ <script src="public/assets/js/views/config/configedit.js"></script>
+
